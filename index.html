@@ -4,47 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Best - Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav> 
-            <img src="/images/jessica-best-logo.png" alt="Jessica Best's personal logo">
-            <h1> Jessica Best</h1>
-            <p> Identify slogan tbd</p>
+    <header class="home">
+        <nav class="home">
             <ul>
                 <li> <a href="about.html">About me</a> </li>
                 <li><a href="experience.html">Experience</a>  </li>
                 <li> <a href="work.html">Work</a> </li>
             </ul>
         </nav>
+            <img src="/images/jessica-best-logo.png" class="small" alt="Jessica Best's personal logo">
+            <h1> Jessica Best</h1>
+            <p><i>Identity slogan tbd</i></p>
     </header>
     <main> 
-        <div> <!-- main body content to navigate to about me page-->
-            <img src="/images/about-me.jpg" alt="photograph of Jessica Best"><!--replace this photo with something serious lol--> 
-            <h2> About</h2>
-            <p>Blurb explaining about me page. Some words about what kind of professional I am, what my professional identity is... something like that. </p>
-            <a href="about.html"> Learn more about me</a>
+        <div class="container"><!-- main body content to navigate to about me page-->
+            <div class="index-image">
+                <img src="/images/about-me.jpg" class="small" alt="photograph of Jessica Best">
+            </div>
+           <div class="index-text">
+                <h2> About</h2>
+                <p class="index">Blurb explaining about me page. Some words about what kind of professional I am, what my professional identity is... something like that. </p>
+                <a href="about.html"> Learn more about me</a>
+            </div>
         </div>
-        <div> <!--main body content to navigate to and explain expeience page-->
-            <img src="data:image/png;base64,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" alt="icon representing resume which leads to experience page">  
-            <h2> About</h2>
-            <p>Blurb explaining experience page. I have a diverse array of experiences, weaving together multiple disciplines.</p>
-            <a href="experience.html">My resume</a>
+        <!--<div>
+            <div class="menu-icon">
+                <img class="small" src="data:image/png;base64,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" alt="icon representing resume which leads to experience page">  
+            </div>
+            <div class="index">
+                <h2> Experience</h2>
+                <p class="index">Blurb explaining experience page. I have a diverse array of experiences, weaving together multiple disciplines.</p>
+                <a href="experience.html">My resume</a>
+            </div>
         </div>
-        <div> <!--main body content to navigate to and explain work/portfolio page-->
-            <img src="/images/portfolio-icon.png" alt="icon representing a portfolio linking to work page">  
-            <h2> Work</h2>
-            <p>Blurb explaining portfolio page. Some sort of sentence describing the theory/principles that my work is grounded in.</p>
-            <a href="work.html">My portfolio</a>
-        </div>
+        
+            <div>
+                <div class="menu-icon">
+                <img src="/images/portfolio-icon.png" class="small" alt="icon representing a portfolio linking to work page">  
+                </div>
+                <div class="index">
+                  <h2> Work</h2>
+                <p>Blurb explaining portfolio page. Some sort of sentence describing the theory/principles that my work is grounded in.</p>
+                <a href="work.html">My portfolio</a>
+                </div>
+            </div>
+        -->
     </main>
     <footer> 
+        <br>
         <div> <!-- container for contact icons-->
-            <a href="mailto:jessica.best@wayne.edu"><img src="https://e7.pngegg.com/pngimages/818/690/png-clipart-email-computer-icons-gmail-email-miscellaneous-angle.png"></a>
-            <!--ideally this icon would have a tooltip/pop up with a phone number--><img src="https://as2.ftcdn.net/v2/jpg/00/97/00/09/1000_F_97000988_68Yf2AlpI7gmLbchCyVbxQhtCKWDDdU9.jpg" alt="icon represnting a text message">
-            <a href="https://www.linkedin.com/in/fleelp/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
-            <!--ideally this icon would link to a fourth page with a form to collect contact info/questions or something like that--><img src="/images/question.png">
+            <a href="mailto:jessica.best@wayne.edu"><img src="https://e7.pngegg.com/pngimages/818/690/png-clipart-email-computer-icons-gmail-email-miscellaneous-angle.png" class="icon"></a>
+            <!--ideally this icon would have a tooltip/pop up with a phone number--><img src="https://as2.ftcdn.net/v2/jpg/00/97/00/09/1000_F_97000988_68Yf2AlpI7gmLbchCyVbxQhtCKWDDdU9.jpg" class="icon" alt="icon represnting a text message">
+            <a href="https://www.linkedin.com/in/fleelp/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon"></a>
+            <!--ideally this icon would link to a fourth page with a form to collect contact info/questions or something like that--><img src="/images/question.png" class="icon">
         </div>
+        <br>
     </footer>
 </body>
 </html>
