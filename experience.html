@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Best - Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav> 
-            <a href="index.html"> <img src="/images/jessica-best-logo.png" alt="Jessica Best's personal logo"></a>
-            <h1>Experience</h1>
-            <ul>
-                <li> <a href="about.html">About me</a> </li>
-                <li><a href="experience.html">Experience</a></li><!--ideally this would not actually link anywhere but would visually change to show it is active-->
-                <li> <a href="work.html">Work</a> </li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container">
+            <a href="index.html"> <img src="/images/jessica-best-logo.png" class ="logo" alt="Jessica Best's personal logo"></a>
+            <h1>About me</h1>
+        </div>
+    <nav>
+        <ul>
+            <li> <a href="about.html">About me</a> </li>
+            <li><a href="experience.html">Experience</a></li><!--ideally this would not actually link anywhere but would visually change to show it is active-->
+            <li> <a href="work.html">Work</a> </li>
+        </ul>
+    </nav>
+</header>
     <main> 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Wayne_State_Warriors_primary_logo.svg/1200px-Wayne_State_Warriors_primary_logo.svg.png" alt="wayne state university logo">
+      <div class="index-image">
+        <img class="small" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Wayne_State_Warriors_primary_logo.svg/1200px-Wayne_State_Warriors_primary_logo.svg.png" alt="wayne state university logo">
+      </div>  
+      <div class="index-text">  
         <h2>Center for Behavioral Health and Justice</h2>
         <p> Paragraph of text that woudl describe this workplace on my resume. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
         <ul>
@@ -26,14 +32,17 @@
             <li> sentence describing second responsibility</li>
             <li> sentence describing third responsibility and so on</li>
         </ul>
+        </div>
     </main>
     <footer> 
+        <br>
         <div> <!-- container for contact icons-->
-            <a href="mailto:jessica.best@wayne.edu"><img src="https://e7.pngegg.com/pngimages/818/690/png-clipart-email-computer-icons-gmail-email-miscellaneous-angle.png"></a>
-            <!--ideally this icon would have a tooltip/pop up with a phone number--><img src="https://as2.ftcdn.net/v2/jpg/00/97/00/09/1000_F_97000988_68Yf2AlpI7gmLbchCyVbxQhtCKWDDdU9.jpg" alt="icon represnting a text message">
-            <a href="https://www.linkedin.com/in/fleelp/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
-            <!--ideally this icon would link to a fourth page with a form to collect contact info/questions or something like that--><img src="/images/question.png">
+            <a href="mailto:jessica.best@wayne.edu"><img src="https://e7.pngegg.com/pngimages/818/690/png-clipart-email-computer-icons-gmail-email-miscellaneous-angle.png" class="icon"></a>
+            <!--ideally this icon would have a tooltip/pop up with a phone number--><img src="https://as2.ftcdn.net/v2/jpg/00/97/00/09/1000_F_97000988_68Yf2AlpI7gmLbchCyVbxQhtCKWDDdU9.jpg" class="icon" alt="icon represnting a text message">
+            <a href="https://www.linkedin.com/in/fleelp/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon"></a>
+            <!--ideally this icon would link to a fourth page with a form to collect contact info/questions or something like that--><img src="/images/question.png" class="icon">
         </div>
+        <br>
     </footer>
 </body>
 </html>
