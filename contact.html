@@ -10,19 +10,38 @@
     <header>
         <div class="container">
             <a href="index.html"> <img src="/images/jessica-best-logo.png" class ="logo" alt="Jessica Best's personal logo"></a>
-            <h1>About me</h1>
+            <h1>Contact me</h1>
         </div>
-        <nav>
+    <nav>
         <ul>
             <li> <a href="about.html">About me</a> </li>
             <li><a href="experience.html">Experience</a></li><!--ideally this would not actually link anywhere but would visually change to show it is active-->
             <li> <a href="work.html">Work</a> </li>
         </ul>
-        </nav>
-    </header>
-    <main> 
-        <h1>Work</h1>
-        <p> this page will be my portfolio.</p>
+    </nav>
+</header>
+    <main>
+        <form name="contact-form" action="https://formspree.io/f/xwkdkzjb" onsubmit="return validateForm()" method="POST">
+            <label>
+                Name:
+                <br>
+                <input type="text" name="name"><span id="error-name"></span>
+            </label>
+            <br>
+            <label>
+                Email:
+                <br>
+                <input type="email" name="email"><span id="error-email"></span>
+            </label>
+            <br>
+            <label>
+                Message:
+                <br>
+                <textarea name="message"></textarea><span id="error-message"></span>
+            </label>
+            <br>
+            <button type="submit">Send</button>
+        </form>
     </main>
     <footer> 
         <br>
@@ -34,5 +53,30 @@
         </div>
         <br>
     </footer>
+
+<script>
+function validateForm(){
+    //make sure name isn't empty
+    let x = document.forms["contact-form"]["name"].value;
+    if (x == "") {
+            document.getElementById('error-name').innerHTML="Please enter your name";
+            return false; 
+    }
+    let y = document.forms["contact-form"]["email"].value;
+    if (y == "") {
+        document.getElementById('error-email').innerHTML="Please enter your name";
+            return false; 
+    }
+    let z = document.forms["contact-form"]["message"].value;
+    if (z == "") {
+        document.getElementById('error-message').innerHTML="Please enter your name";
+            return false; 
+    }
+
+}
+</script>
+
 </body>
+
+
 </html>
