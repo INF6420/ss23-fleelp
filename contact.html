@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,25 @@
     <title>Jessica Best - Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <a href="index.html"> <img src="/images/logo.png" class ="logo" alt="Jessica Best's personal logo"></a>
+            <a href="index.html"> <img src="images/logo.png" class="logo" alt="Jessica Best's personal logo"></a>
             <h1>Contact me</h1>
         </div>
-    <nav>
-        <ul>
-            <li> <a href="about.html">About me</a> </li>
-            <li><a href="experience.html">Experience</a></li><!--ideally this would not actually link anywhere but would visually change to show it is active-->
-            <li> <a href="work.html">Work</a> </li>
-        </ul>
-    </nav>
-</header>
+        <nav>
+            <ul>
+                <li> <a href="about.html">About me</a> </li>
+                <li><a href="experience.html">Experience</a></li>
+                <!--ideally this would not actually link anywhere but would visually change to show it is active-->
+                <li> <a href="work.html">Work</a> </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <form name="contact-form" action="https://formspree.io/f/xwkdkzjb" onsubmit="return validateForm()" method="POST">
+        <form name="contact-form" action="https://formspree.io/f/xwkdkzjb" onsubmit="return validateForm()"
+            method="POST">
             <label>
                 Name:
                 <br>
@@ -44,37 +48,38 @@
             <button type="submit">Send</button>
         </form>
     </main>
-    <footer> 
+    <footer>
         <br>
         <div> <!-- container for contact icons-->
             <a href="mailto:jessica.best@wayne.edu"><img src="images/mail.png" class="icon" alt="email icon"></a>
-            <a href="https://www.linkedin.com/in/fleelp/"><img src="images/linked-in.png" alt="linked in" class="icon"></a>
-            <a href="/contact.html"><img src="/images/say-hi.png" class="icon" alt="say hi icon"></a>
+            <a href="https://www.linkedin.com/in/fleelp/"><img src="images/linked-in.png" alt="linked in"
+                    class="icon"></a>
+            <a href="/contact.html"><img src="images/say-hi.png" class="icon" alt="say hi icon"></a>
         </div>
         <br>
     </footer>
 
-<script>
-function validateForm(){
-    //make sure name isn't empty
-    let x = document.forms["contact-form"]["name"].value;
-    if (x == "") {
-            document.getElementById('error-name').innerHTML="Please enter your name";
-            return false; 
-    }
-    let y = document.forms["contact-form"]["email"].value;
-    if (y == "") {
-        document.getElementById('error-email').innerHTML="Please enter your name";
-            return false; 
-    }
-    let z = document.forms["contact-form"]["message"].value;
-    if (z == "") {
-        document.getElementById('error-message').innerHTML="Please enter your name";
-            return false; 
-    }
+    <script>
+        function validateForm() {
+            //make sure name isn't empty
+            let x = document.forms["contact-form"]["name"].value;
+            if (x == "") {
+                document.getElementById('error-name').innerHTML = "Please enter your name";
+                return false;
+            }
+            let y = document.forms["contact-form"]["email"].value;
+            if (y == "") {
+                document.getElementById('error-email').innerHTML = "Please enter your name";
+                return false;
+            }
+            let z = document.forms["contact-form"]["message"].value;
+            if (z == "") {
+                document.getElementById('error-message').innerHTML = "Please enter your name";
+                return false;
+            }
 
-}
-</script>
+        }
+    </script>
 
 </body>
 
