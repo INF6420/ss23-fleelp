@@ -2,15 +2,38 @@
     padding: 0px;
     margin: 0px;
     font-family:sans-serif;
+    font-weight: lighter; 
+}
+a{
+    color:black; 
+}
+
+a:hover{
+    font-weight:350; 
+}
+nav a{
+    color:black;
+    font-weight: 300;
+    text-decoration: none;
+}
+a:active{
+    color: purple;
+}
+nav a:hover{
+    font-weight: bold;
+}
+ul{
+    margin-left:4%;
 }
 
 img.icon{
 width: 75px;
 height: 75px;
 }
+
 img.small{
 
-    height: 200px;
+    height: 150px;
 }
 
 img.medium{
@@ -20,18 +43,20 @@ img.medium{
 }
 
 img.logo{
-    width: 120px;
+    width: 75px;
     float:left; 
+    padding: 5px; 
+    margin: 5px; 
 }
 
 h1{
-
+    display: flex;
+    justify-content: center;
     font-size: 50px;
-    font-family: sans-serif;
-
-    padding: 5px;
-    margin: 0px;
-
+    font-weight: initial;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 h2{
@@ -39,13 +64,37 @@ h2{
     margin: 0px; 
 }
 
+li.menu{
+    display: flex;
+    flex-direction: column;
+}
 
+ul.menu{
+    list-style: none;
+    display: flex;  
+    width: 80%;
+    justify-content: center;
+}
 
+nav{
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    background-color: white;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    color: black;
+}
 nav.home{
-  
+    list-style: none; 
     text-align: right;
     position: absolute;
     right: 5px;
+    background: lightgray;
+    border: 0;
 }
 
 header{
@@ -62,33 +111,38 @@ header.home{
     background-color: lightgray;
     padding-top:20px;
     padding-bottom:20px;
-
+    border-bottom: 1px solid black;
 }
  
+ul.flex{
+    display:flex;
+    background-color: hotpink;
+}
 
+div.container{
+    display:flex; 
+}
 
 main{
-    padding-left:10%;
-    padding-right:10%;
-    padding-top: 50px; 
-    padding-bottom: 50px;
-    margin-bottom:5px; 
-    background-color: white;
-    /*height: 100%;*/
+    padding-left:5%;
+    padding-right:5%;
+    padding-top: 10px; 
+    padding-bottom: 10px;
     display: flex; 
     flex-direction: row;
 }
 
-div.container{
+div.title-logo{
     overflow: auto;
     width: 100%;
+    display: flex; 
 }
 
 div.index-image{
    
     width: 200px;
     float:left; 
-   
+    display: flex;
     position:relative;
     margin: 10px;
     padding: 10px;
@@ -163,6 +217,6 @@ footer {
     margin: 0px;
     padding: 0px; 
     background-color: lightgray;
-
+    border-top: 1px solid black; 
     text-align:center
 }
